@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="project_work_certification_view_form" model="ir.ui.view">
+            <field name="name">project.certification.view.form</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">> 
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}" class="myStatusBar"/> 
+                </xpath>
+                <xpath expr="//page[@name='settings']" position="before"> 
+                    <page name="General" string="General">
+                        <form string="General">
+                            <sheet>
+                                <group name = "arriba">   
+                                    <group name = "arriba_izquierda">
+                                        <field name="partner_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        <field name="work_manager_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        
+                                    </group>
+                                    <group name = "arriba_derecha">
+                                        <field name="architect_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        <field name="prevention_coordinator_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        <field name="prescriber_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                    </group>
+                                </group>
+                                <group name = "centro">   
+                                    <group name = "centro_izquierda">
+                                        <field name="project_code" readonly='1'/>
+                                        <field name="opportunity_id" readonly='1' context="{'show_code': True}"/>
+                                        <field name="payment_method"/>
+                                    </group>
+                                    <group name = "centro_derecha">
+                                        <field name="date_start" widget="date"/>
+                                        <field name="date_end" widget="date"/>
+                                    </group>
+                                </group>
+                                <group name = "abajo">   
+                                    <group name = "abajo_izquierda">
+                                        <field name="is_licensed" widget="boolean"/>
+                                        <field name="is_work_center_open" widget="boolean"/>
+                                    </group>
+                                    <group name = "abajo_derecha">
+                                        <field name="penalties"  widget="boolean"/>
+                                        <field name="penalties_amount" attrs="{'invisible': [('penalties', '=', False)]}"/>
+                                        <field name="penalties_date_start" attrs="{'invisible': [('penalties', '=', False)]}"/>
+                                    </group>
+                                </group>
+                                <label for= "notes"/>
+                                <field name="notes" widget="text"/>
+                            </sheet>
+                        </form>
+                    </page>
+
+                    <page name="Outsources" string="Outsources">
+                        <field name="work_outsources_ids" 
+                                context="{
+                                            'tree_view_ref': 'work.view_outsource_list', 
+                                            'form_view_ref': 'work.view_outsource_form',
+                                            'default_project_id': id
+                                        }"
+                        />
+                    </page>
+
+                    <page name="Material" string="Material">
+                        <field name="provider_ids" 
+                                context="{
+                                            'tree_view_ref': 'work.work_list_material',
+                                            'form_view_ref': 'work.work_form_material',
+                                            'default_project_id': id
+                                        }"
+                        />
+                    </page>
+
+                    <page name="Waste Management" string="Waste Management">
+                        <form string="Waste Management">
+                            <sheet>
+                                <group name = "arriba">   
+                                    <group name = "arriba_izquierda">
+                                        <field name="management_type"/>
+                                        <field name="date_disposal" attrs="{'invisible': [('management_type', '!=', 'pavilion')]}"/>
+                                    </group>
+                                    <group name = "arriba_derecha">
+                                        <field name="sa"/>
+                                        <field name="dsc"/>
+                                    </group>
+                                </group>
+                                <separator/>
+                                <group name = "centro">   
+                                    <field name="work_wastes_ids_sa" 
+                                            context="{
+                                                        'tree_view_ref': 'work.view_work_waste_management_list', 
+                                                        'form_view_ref': 'work.view_work_waste_management_form',
+                                                        'default_project_id_sa': id
+                                                    }"
+                                    />
+                                    <field name="work_wastes_ids_dsc" 
+                                            context="{
+                                                        'tree_view_ref': 'work.view_work_waste_management_list', 
+                                                        'form_view_ref': 'work.view_work_waste_management_form',
+                                                        'default_project_id_dsc': id
+                                                    }"
+                                    />
+                                </group>
+                            </sheet>
+                        </form>
+                    </page>
+
+                    <page name="Certifications" string="Certifications">
+                        <field name="work_certification_ids" 
+                                context="{
+                                            'tree_view_ref': 'work.view_certification_list',
+                                            'form_view_ref': 'work.view_certification_form_quick_create',
+                                            'default_project_id': id,
+                                            'default_architect_id': architect_id
+                                        }"
+                                attrs="{'readonly': [('state', '=', '3_closed')]}"
+                        />
+                    </page>
+                </xpath>            
+            </field>
+        </record>    
+
+        <!-- KANBAN columnas state -->
+        <record id="project_work_view_kanban" model="ir.ui.view">
+            <field name="name">project.work.view.kanban</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.view_project_kanban"/>
+            <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="before">
+                <field name="state"/>
+            </xpath>
+            <xpath expr="//kanban" position="attributes">
+                <attribute name="default_group_by">state</attribute>
+            </xpath>
+            </field>
+        </record>   
+
+        <!-- Al clickar sobre card en kanban: form view project -->
+        <template id="assets_backend" inherit_id="web.assets_backend">
+            <xpath expr="script[@src='/project/static/src/js/project.js']" position="replace"/>
+        </template>
+
+        <!-- Meter context en action para modificar el m2o de la oportunidad -->
+        <record id="project.open_view_project_all" model="ir.actions.act_window">
+            <field name="context">{'show_code': True}</field>
+        </record>
+    </data>
+</odoo>

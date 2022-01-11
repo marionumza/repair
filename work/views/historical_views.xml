@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_hist_rea_list" model="ir.ui.view">
+            <field name="name">hist rea list</field>
+            <field name="model">work.hist_rea</field>
+            <field name="arch" type="xml">
+                <tree string="REA">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_rea"/>
+                    <field name="rea_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_rea_form" model="ir.ui.view">
+            <field name="name">hist rea Form</field>
+            <field name="model">work.hist_rea</field>
+            <field name="arch" type="xml">
+                <form string="REA">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="rea" filename="rea_file_name"/>
+                                <field name="rea_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_rea"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_rc_insurance_list" model="ir.ui.view">
+            <field name="name">hist rc insurance list</field>
+            <field name="model">work.hist_rc_insurance</field>
+            <field name="arch" type="xml">
+                <tree string="RC Insurance">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_rc_insurance"/>
+                    <field name="rc_insurance_file_name"/>
+                    <field name="rc_insurance_payment_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_rc_insurance_form" model="ir.ui.view">
+            <field name="name">hist rc insurance Form</field>
+            <field name="model">work.hist_rc_insurance</field>
+            <field name="arch" type="xml">
+                <form string="RC Insurance">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="rc_insurance" filename="rc_insurance_file_name"/>
+                                <field name="rc_insurance_file_name"  invisible="1"/>
+                                <field name="rc_insurance_payment" filename="rc_insurance_payment_file_name"/>
+                                <field name="rc_insurance_payment_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_rc_insurance"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_accident_insurance_list" model="ir.ui.view">
+            <field name="name">hist accident insurance list</field>
+            <field name="model">work.hist_accident_insurance</field>
+            <field name="arch" type="xml">
+                <tree string="Accident Insurance">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_accident_insurance"/>
+                    <field name="accident_insurance_file_name"/>
+                    <field name="accident_insurance_payment_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_accident_insurance_form" model="ir.ui.view">
+            <field name="name">hist accident insurance Form</field>
+            <field name="model">work.hist_accident_insurance</field>
+            <field name="arch" type="xml">
+                <form string="Accident Insurance">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="accident_insurance" filename="accident_insurance_file_name"/>
+                                <field name="accident_insurance_file_name"  invisible="1"/>
+                                <field name="accident_insurance_payment" filename="accident_insurance_payment_file_name"/>
+                                <field name="accident_insurance_payment_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_accident_insurance"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_prevention_service_list" model="ir.ui.view">
+            <field name="name">hist prevention service list</field>
+            <field name="model">work.hist_prevention_service</field>
+            <field name="arch" type="xml">
+                <tree string="Prevention Service">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_prevention_service_certificate"/>
+                    <field name="prevention_service_certificate_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_prevention_service_form" model="ir.ui.view">
+            <field name="name">hist prevention service Form</field>
+            <field name="model">work.hist_prevention_service</field>
+            <field name="arch" type="xml">
+                <form string="Prevention Service">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="prevention_service_certificate" filename="prevention_service_certificate_file_name"/>
+                                <field name="prevention_service_certificate_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_prevention_service_certificate"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_ss_certificate_list" model="ir.ui.view">
+            <field name="name">hist ss certificate list</field>
+            <field name="model">work.hist_ss_certificate</field>
+            <field name="arch" type="xml">
+                <tree string="SS Certificate">
+                    <field name="outsource_id"/>
+                    <field name="date_validity_ss_certificate"/>
+                    <field name="ss_certificate_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_ss_certificate_form" model="ir.ui.view">
+            <field name="name">hist ss certificate Form</field>
+            <field name="model">work.hist_ss_certificate</field>
+            <field name="arch" type="xml">
+                <form string="SS Certificate">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="ss_certificate" filename="ss_certificate_file_name"/>
+                                <field name="ss_certificate_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_validity_ss_certificate"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_tax_certificate_list" model="ir.ui.view">
+            <field name="name">hist tax certificate list</field>
+            <field name="model">work.hist_tax_certificate</field>
+            <field name="arch" type="xml">
+                <tree string="Tax Certificate">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_tax_authority_certificate"/>
+                    <field name="tax_authority_certificate_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_tax_certificate_form" model="ir.ui.view">
+            <field name="name">hist tax certificate Form</field>
+            <field name="model">work.hist_tax_certificate</field>
+            <field name="arch" type="xml">
+                <form string="Tax Certificate">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="tax_authority_certificate" filename="tax_authority_certificate_file_name"/>
+                                <field name="tax_authority_certificate_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_tax_authority_certificate"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_ita_list" model="ir.ui.view">
+            <field name="name">hist ita list</field>
+            <field name="model">work.hist_ita</field>
+            <field name="arch" type="xml">
+                <tree string="ITA">
+                    <field name="outsource_id"/>
+                    <field name="date_validity_ita"/>
+                    <field name="ita_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_ita_form" model="ir.ui.view">
+            <field name="name">hist ita Form</field>
+            <field name="model">work.hist_ita</field>
+            <field name="arch" type="xml">
+                <form string="ITA">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="ita" filename="ita_file_name"/>
+                                <field name="ita_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_validity_ita"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_workers_receipt_list" model="ir.ui.view">
+            <field name="name">hist workers receipt list</field>
+            <field name="model">work.hist_workers_receipt</field>
+            <field name="arch" type="xml">
+                <tree string="Workers Receipt">
+                    <field name="outsource_id"/>
+                    <field name="date_validity_workers_receipt"/>
+                    <field name="workers_receipt_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_workers_receipt_form" model="ir.ui.view">
+            <field name="name">hist workers receipt Form</field>
+            <field name="model">work.hist_workers_receipt</field>
+            <field name="arch" type="xml">
+                <form string="Workers Receipt">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="workers_receipt" filename="workers_receipt_file_name"/>
+                                <field name="workers_receipt_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_validity_workers_receipt"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_rlc_rnt_list" model="ir.ui.view">
+            <field name="name">hist rlc rnt list</field>
+            <field name="model">work.hist_rlc_rnt</field>
+            <field name="arch" type="xml">
+                <tree string="RLC and RNT">
+                    <field name="outsource_id"/>
+                    <field name="date_validity_rlc_rnt"/>
+                    <field name="rlc_file_name"/>
+                    <field name="rnt_file_name"/>
+                    <field name="rlc_rnt_receipt_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_rlc_rnt_form" model="ir.ui.view">
+            <field name="name">hist rlc rnt Form</field>
+            <field name="model">work.hist_rlc_rnt</field>
+            <field name="arch" type="xml">
+                <form string="RLC and RNT">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="rlc" filename="rlc_file_name"/>
+                                <field name="rlc_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="rnt" filename="rnt_file_name"/>
+                                <field name="rnt_file_name"  invisible="1"/>
+                            </group>
+                        </group>
+
+                        <group name = "abajo">   
+                            <group name = "abajo_izquierda">
+                                <field name="rlc_rnt_receipt" filename="rlc_rnt_receipt_file_name"/>
+                                <field name="rlc_rnt_receipt_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "abajo_derecha">
+                                <field name="date_validity_rlc_rnt"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hist_freelance_list" model="ir.ui.view">
+            <field name="name">hist Freelance Receipt list</field>
+            <field name="model">work.hist_freelance_receipt</field>
+            <field name="arch" type="xml">
+                <tree string="Freelance Receipt">
+                    <field name="outsource_id"/>
+                    <field name="date_expiration_freelance_payment_receipt"/>
+                    <field name="freelance_payment_receipt_file_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hist_freelance_form" model="ir.ui.view">
+            <field name="name">hist Freelance Receipt Form</field>
+            <field name="model">work.hist_freelance_receipt</field>
+            <field name="arch" type="xml">
+                <form string="Freelance Receipt">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="freelance_payment_receipt" filename="freelance_payment_receipt_file_name"/>
+                                <field name="freelance_payment_receipt_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="date_expiration_freelance_payment_receipt"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

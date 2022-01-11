@@ -1,0 +1,2099 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* work
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 12:44+0000\n"
+"PO-Revision-Date: 2021-12-16 13:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_sale_order_structures
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Buenos días,\n"
+"                                        <br/> <br/><br/>\n"
+"                                        Adjunto al presente remitimos "
+"presupuesto solicitado relativo a los trabajos de \n"
+"                                        _____\n"
+"                                        a realizar en la C. PROP. _____ de "
+"_____.\n"
+"                                        <br/><br/>\n"
+"                                        Para cualquier duda o aclaración al "
+"respecto no dude en ponerse en contacto con nosotros.\n"
+"                                        <br/><br/>\n"
+"                                        De conformidad con el mismo "
+"agradeceríamos nos sea remitida su aceptación.\n"
+"                                        <br/><br/><br/>\n"
+"                                        Un saludo,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_sale_order_facade
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Buenos días,\n"
+"                                        <br/> <br/><br/>\n"
+"                                        Adjunto al presente remitimos "
+"presupuesto solicitado relativo a los trabajos de \n"
+"                                        _____\n"
+"                                        en la comunidad de propietarios \n"
+"                                        _____________.\n"
+"                                        <br/><br/>\n"
+"                                        Quedamos a disposición de la "
+"Propiedad para cualquier aclaración adicional.\n"
+"                                        <br/><br/>\n"
+"                                        De conformidad con el mismo "
+"agradeceríamos nos sea remitida su aceptación.\n"
+"                                        <br/><br/><br/>\n"
+"                                        Atentamente,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_prevention_weekly_documentation_error
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Buenos días,\n"
+"                                        <br/> <br/><br/>\n"
+"                                        En las próximas fechas caducará la "
+"siguiente documentación:\n"
+"                                        <br/> <br/>\n"
+"                                        % if ctx['errors']:\n"
+"                                            De sus trabajadores:\n"
+"                                            <ul> <br/>\n"
+"                                                % for error in "
+"ctx['errors']\n"
+"                                                    <li>${error[0]}</li>\n"
+"                                                    <ul>\n"
+"                                                        % for err in "
+"error[1]\n"
+"                                                        <li>${err}</li>\n"
+"                                                        % endfor\n"
+"                                                    </ul>\n"
+"                                                % endfor\n"
+"                                            </ul>\n"
+"                                        % endif\n"
+"                                        % if ctx['freelance_errors']:\n"
+"                                            <ul> <br/>\n"
+"                                                % for error in "
+"ctx['freelance_errors']\n"
+"                                                    <li>${error}</li>\n"
+"                                                % endfor\n"
+"                                            </ul>\n"
+"                                        % endif\n"
+"                                        Les recordamos que es preciso "
+"tenerla actualizada para no tener ningún inconveniente en el acceso a "
+"nuestras obras.\n"
+"                                        <br/><br/><br/>\n"
+"                                        Un saludo,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_prevention_daily_documentation_error
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Buenos días,\n"
+"                                        <br/> <br/><br/>\n"
+"                                        En las próximas fechas caducará la "
+"siguiente documentación:\n"
+"                                        <br/> <br/>\n"
+"                                        % if ctx['outsource_errors']:\n"
+"                                            <strong>De su empresa:</"
+"strong>\n"
+"                                            <ul> <br/>\n"
+"                                                % for error in "
+"ctx['outsource_errors']\n"
+"                                                    <li>${error}</li>\n"
+"                                                % endfor\n"
+"                                            </ul>\n"
+"                                        % endif\n"
+"                                        \n"
+"                                        % if ctx['worker_errors']:\n"
+"                                            <strong>De sus trabajadores:</"
+"strong>\n"
+"                                            <ul> <br/>\n"
+"                                                % for error in "
+"ctx['worker_errors']\n"
+"                                                    <li>${error[0]}</li>\n"
+"                                                    <ul>\n"
+"                                                        % for err in "
+"error[1]\n"
+"                                                        <li>${err}</li>\n"
+"                                                        % endfor\n"
+"                                                    </ul>\n"
+"                                                % endfor\n"
+"                                            </ul>\n"
+"                                         % endif\n"
+"                                        Les recordamos que es preciso "
+"tenerla actualizada para no tener ningún inconveniente en el acceso a "
+"nuestras obras.\n"
+"                                        <br/><br/><br/>\n"
+"                                        Un saludo,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_payment_documentation_error
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Estimado Sr./Sra.,\n"
+"                                        <br/> <br/><br/>\n"
+"                                        Mensualmente, previamente al pago "
+"de cada factura, la subcontrata deberá entregar a Repair los siguientes "
+"documentos:\n"
+"                                        <ul> <br/>\n"
+"                                            <li>Certificado de estar al "
+"corriente de pagos con la seguridad social.</li>\n"
+"                                            <li>Certificado de Contratación "
+"de estar al corriente de pagos con la hacienda.</li>\n"
+"                                            % if object.category_id.id == "
+"6:\n"
+"                                                <li>\n"
+"                                                    Recibo mensual firmado "
+"por parte de los trabajadores de la subcontrata, \n"
+"                                                    en la que se indique "
+"que los trabajadores están al corriente de sus sueldos y salarios, \n"
+"                                                    y que no tienen ninguna "
+"cantidad pendiente de que se les abone por parte de la subcontrata.\n"
+"                                                </li>\n"
+"                                                <li>ITA mensual.</li>\n"
+"                                                <li>RLC y RNT del mes, así "
+"como el recibo bancario correspondiente.</li>\n"
+"                                            % endif\n"
+"                                        </ul>\n"
+"                                        En nuestros archivos consta que a "
+"fecha de hoy <strong>no hemos recibido la siguiente documentación</"
+"strong>:\n"
+"                                        <ul> <br/>\n"
+"                                            % for error in ctx['errors']\n"
+"                                                <li>${error}</li>\n"
+"                                            % endfor\n"
+"                                        </ul>\n"
+"                                        Por lo que, os solicitamos que nos "
+"enviéis la documentación solicitada, a la mayor brevedad posible, para "
+"poder proceder al pago el próximo día 20 sin demoras.\n"
+"                                        <br/><br/><br/>\n"
+"                                        Atentamente,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:mail.template,body_html:work.mail_template_invoice
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-"
+"top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-"
+"serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <img src=\"/logo.png?company=1\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: auto;\" alt=\"${object."
+"user_id.company_id.name}\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:"
+"center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: "
+"white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: "
+"13px;\">\n"
+"                                    <div>\n"
+"                                        Muy buenos días,\n"
+"                                        <br/><br/><br/>\n"
+"                                        Os enviamos la factura del anticipo "
+"del \n"
+"                                        __ \n"
+"                                        pactado para la obra de \n"
+"                                        _____________\n"
+"                                        , por importe de \n"
+"                                        ______________\n"
+"                                        , que cargaremos el \n"
+"                                        ______ \n"
+"                                        en la cuenta de la comunidad.\n"
+"                                        <br/><br/>\n"
+"                                        El resto del presupuesto aceptado "
+"lo cobraremos en \n"
+"                                        ___ mensualidades \n"
+"                                        de _________ \n"
+"                                        cada una de ellas, desde el \n"
+"                                        ______ \n"
+"                                        al \n"
+"                                        _______\n"
+"                                        .\n"
+"                                        <br/><br/>\n"
+"                                        Para cualquier duda o aclaración al "
+"respecto no dude en ponerse en contacto con nosotros.\n"
+"                                        <br/><br/>\n"
+"                                        Os adjuntamos también copia de las "
+"facturas de la obra firmadas y sellada para el trámite de posibles "
+"subvenciones.”\n"
+"                                        <br/><br/><br/>\n"
+"                                        Un saludo,\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:"
+"rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;"
+"min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__dsc__accepted
+#: model:ir.model.fields.selection,name:work.selection__project_project__sa__accepted
+#: model:ir.model.fields.selection,name:work.selection__work_waste_management__state__accepted
+#: model:ir.model.fields.selection,name:work.selection__work_work_certification__state__accepted
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_material__budget_accepted
+msgid "Accepted Budget"
+msgstr "Presupuesto Aceptado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_material__budget_accepted_file_name
+msgid "Accepted Budget File"
+msgstr "Presupuesto Aceptado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__date_accepted
+msgid "Accepted date"
+msgstr "Fecha de aceptación"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_accident_insurance
+#: model:ir.model,name:work.model_work_hist_accident_insurance
+#: model:ir.model.fields,field_description:work.field_res_partner__accident_insurance
+#: model:ir.model.fields,field_description:work.field_res_users__accident_insurance
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__accident_insurance
+#: model:ir.ui.menu,name:work.menu_accident_insurance
+#: model_terms:ir.ui.view,arch_db:work.view_hist_accident_insurance_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_accident_insurance_list
+msgid "Accident Insurance"
+msgstr "Seguro de Accidentes"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__accident_insurance_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__accident_insurance_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__accident_insurance_file_name
+msgid "Accident Insurance File"
+msgstr "Seguro de Accidentes"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__accident_insurance_payment
+#: model:ir.model.fields,field_description:work.field_res_users__accident_insurance_payment
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__accident_insurance_payment
+msgid "Accident Insurance Payment Receipt"
+msgstr "Recibo de pago del seguro de accidentes"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__accident_insurance_payment_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__accident_insurance_payment_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__accident_insurance_payment_file_name
+msgid "Accident Insurance Payment Receipt File"
+msgstr "Recibo de pago del seguro de accidentes"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__amount
+msgid "Accumulated amount since the start"
+msgstr "Importe acumulado desde el comienzo"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_analytic_line__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de excepcion de actividad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_state
+msgid "Activity State"
+msgstr "Estado de Actividad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__adhesion_certificate
+msgid "Adhesion Certificate Doc"
+msgstr "Acta de Adhesion"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__adhesion_certificate_file_name
+msgid "Adhesion Certificate File"
+msgstr "Acta de Adhesion"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__payment_method__agreed
+msgid "Agreed Payment"
+msgstr "Pagos Pactados"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__related_project_analytic
+#: model:ir.model.fields,field_description:work.field_work_work_certification__related_project_id_analytic_account_id
+msgid "Analytic Account"
+msgstr "Cuenta Analítica"
+
+#. module: work
+#: model:ir.model,name:work.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea Analítica"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__related_project_id_analytic_account_id
+msgid ""
+"Analytic account to which this project is linked for financial management. "
+"Always the same for every certification in the project."
+msgstr ""
+"Cuenta analítica a la que se vincula este proyecto para la gestión "
+"financiera. Siempre la misma para todas las certificaciones del proyecto."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_account_move__related_project_analytic
+#: model:ir.model.fields,help:work.field_account_move_line__related_project_id
+msgid ""
+"Analytic account to which this project is linked for financial management. "
+"Use an analytic account to record cost and revenue on your project."
+msgstr ""
+"Cuenta analítica a la que se vincula este proyecto para la gestión "
+"financiera."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__tax_authority_certificate
+#: model:ir.model.fields,help:work.field_res_partner__tax_authority_certificate_file_name
+#: model:ir.model.fields,help:work.field_res_users__tax_authority_certificate
+#: model:ir.model.fields,help:work.field_res_users__tax_authority_certificate_file_name
+#: model:ir.model.fields,help:work.field_work_hist_tax_certificate__tax_authority_certificate
+#: model:ir.model.fields,help:work.field_work_hist_tax_certificate__tax_authority_certificate_file_name
+msgid ""
+"Annual certificate of being up to date with payments with Tax Authorities"
+msgstr "Certificado anual de estar al corriente de pagos con Hacienda"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__architect_id
+#: model:ir.model.fields,field_description:work.field_work_work_certification__architect_id
+msgid "Architect"
+msgstr "Arquitecto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__attached_file_name
+msgid "Attached File"
+msgstr "Documento Adjunto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__attached_file
+msgid "Attached File Doc"
+msgstr "Documento Adjunto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__attachment_file_name
+msgid "Attachment"
+msgstr "Documento Adjunto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de documentos adjuntos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__attachment
+msgid "Attachment Doc"
+msgstr "Documento Adjunto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_crm_lead__date_budget
+msgid "Budget Date"
+msgstr "Fecha Presupuesto"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__account_move__computed_validation_state__cancel
+#: model:ir.model.fields.selection,name:work.selection__account_move__validation_state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: work
+#: model:ir.model,name:work.model_work_work_certification
+msgid "Certification"
+msgstr "Certificación"
+
+#. module: work
+#: model_terms:ir.ui.view,arch_db:work.view_certification_form
+#: model_terms:ir.ui.view,arch_db:work.view_certification_form_quick_create
+msgid "Certification Name"
+msgstr "Nombre Certificación"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.open_certifications_list
+#: model:ir.model.fields.selection,name:work.selection__project_project__payment_method__certifications
+#: model:ir.ui.menu,name:work.submenu_certification
+#: model_terms:ir.ui.view,arch_db:work.project_work_certification_view_form
+#: model_terms:ir.ui.view,arch_db:work.view_certification_form
+#: model_terms:ir.ui.view,arch_db:work.view_certification_form_quick_create
+#: model_terms:ir.ui.view,arch_db:work.view_certification_list
+msgid "Certifications"
+msgstr "Certificaciones"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__payment_check
+msgid "Checked"
+msgstr "Checkeado"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_rc_insurance
+#: model:ir.model.fields,field_description:work.field_res_partner__rc_insurance
+#: model:ir.model.fields,field_description:work.field_res_users__rc_insurance
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__rc_insurance
+#: model:ir.ui.menu,name:work.menu_rc_insurance
+msgid "Civil Liability Insurance"
+msgstr "Seguro RC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rc_insurance_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rc_insurance_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__rc_insurance_file_name
+msgid "Civil Liability Insurance File"
+msgstr "Seguro RC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rc_insurance_payment
+#: model:ir.model.fields,field_description:work.field_res_users__rc_insurance_payment
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__rc_insurance_payment
+msgid "Civil Liability Insurance Payment Receipt"
+msgstr "Recibo de pago de Seguro RC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rc_insurance_payment_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rc_insurance_payment_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__rc_insurance_payment_file_name
+msgid "Civil Liability Insurance Payment Receipt File"
+msgstr "Recibo de pago de Seguro RC"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__state__3_closed
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste__code
+#: model:ir.model.fields,field_description:work.field_work_waste_management__waste_id
+#: model_terms:ir.ui.view,arch_db:work.crm_lead_work_view_search
+msgid "Code"
+msgstr "Código"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: work
+#: model:ir.model,name:work.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__management_type__container
+msgid "Container"
+msgstr "Contenedor"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__contract
+msgid "Contract Doc"
+msgstr "Contrato"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__contract_file_name
+msgid "Contract File"
+msgstr "Contrato"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__contract_required
+msgid "Contract Required"
+msgstr "Necesario Contrato"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__create_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__create_uid
+#: model:ir.model.fields,field_description:work.field_work_waste__create_uid
+#: model:ir.model.fields,field_description:work.field_work_waste_management__create_uid
+#: model:ir.model.fields,field_description:work.field_work_work_certification__create_uid
+#: model:ir.model.fields,field_description:work.field_work_work_material__create_uid
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__create_uid
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__create_date
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__create_date
+#: model:ir.model.fields,field_description:work.field_work_waste__create_date
+#: model:ir.model.fields,field_description:work.field_work_waste_management__create_date
+#: model:ir.model.fields,field_description:work.field_work_work_certification__create_date
+#: model:ir.model.fields,field_description:work.field_work_work_material__create_date
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__create_date
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__dsc
+msgid "DSC"
+msgstr "DSC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__work_wastes_ids_dsc
+msgid "DSC Wastes"
+msgstr "Residuos DSC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__date_waste
+msgid "Date"
+msgstr "Fecha"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__date_send
+msgid "Date the certification is sent"
+msgstr "Fecha en la que se envía la certificación"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_outsource__date_end
+msgid "Date the outsource ends the work"
+msgstr "Fecha en la que la subcontrata finaliza su trabajo en la obra"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_outsource__date_get_in
+msgid "Date the outsource get in the work"
+msgstr "Fecha en la que la subcontrata debería entrar en la obra"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__penalties_date_start
+msgid "Date the penalization starts"
+msgstr "Fecha de inicio de penalización"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__date_disposal
+msgid "Date the wastes are disposed from the pavilion"
+msgstr "Fecha retirada del residuo del pabellón"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__date_end
+msgid ""
+"Date the work ends, linked with the aproval of the liquidation certification"
+msgstr ""
+"Fecha fin de obra, vinculada a la aprobación de la certificación de "
+"liquidación"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__date_start
+msgid "Date the work starts"
+msgstr "Fecha inicio de la obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste__description
+#: model:ir.model.fields,field_description:work.field_work_waste_management__related_waste_id_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__display_name
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__display_name
+#: model:ir.model.fields,field_description:work.field_work_waste__display_name
+#: model:ir.model.fields,field_description:work.field_work_waste_management__display_name
+#: model:ir.model.fields,field_description:work.field_work_work_certification__display_name
+#: model:ir.model.fields,field_description:work.field_work_work_material__display_name
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__display_name
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__date_disposal
+msgid "Disposal Date"
+msgstr "Fecha Retirada"
+
+#. module: work
+#: model:mail.template,subject:work.mail_template_payment_documentation_error
+msgid "Documentacion de Pago"
+msgstr "Documentación de Pago"
+
+#. module: work
+#: model:mail.template,subject:work.mail_template_prevention_daily_documentation_error
+#: model:mail.template,subject:work.mail_template_prevention_weekly_documentation_error
+msgid "Documentacion de Prevencion"
+msgstr "Documentación de Prevención"
+
+#. module: work
+#: model_terms:ir.ui.view,arch_db:work.res_partner_form_extended_outsource
+msgid "Documentation"
+msgstr "Documentación"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__rea
+#: model:ir.model.fields,help:work.field_res_partner__rea_file_name
+#: model:ir.model.fields,help:work.field_res_users__rea
+#: model:ir.model.fields,help:work.field_res_users__rea_file_name
+#: model:ir.model.fields,help:work.field_work_hist_rea__rea
+#: model:ir.model.fields,help:work.field_work_hist_rea__rea_file_name
+msgid "Duration 3 years"
+msgstr "Duración 3 años"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__date_epi_handing_over
+msgid "EPI Expiration date"
+msgstr "Fecha Caducidad EPIs"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__epi_handing_over
+msgid "EPI Handing Over Doc"
+msgstr "Entrega de EPIs"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__epi_handing_over_file_name
+msgid "EPI Handing Over File"
+msgstr "Entrega de EPIs"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__date_end
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__date_end
+msgid "End date"
+msgstr "Fecha fin"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__is_estimated
+msgid "Estimated"
+msgstr "Estimado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_accident_insurance
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_accident_insurance
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__date_expiration_accident_insurance
+msgid "Expiration Date Accident Insurance"
+msgstr "Fecha Caducidad Seguro de Accidentes"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_rc_insurance
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_rc_insurance
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__date_expiration_rc_insurance
+msgid "Expiration Date Civil Liability"
+msgstr "Fecha Caducidad Seguro RC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_freelance_payment_receipt
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_freelance_payment_receipt
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__date_expiration_freelance_payment_receipt
+msgid "Expiration Date Freelance payment receipt"
+msgstr "Fecha Caducidad Recibo de Pago de Autónomos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_medical_examination
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_medical_examination
+msgid "Expiration Date Medical Examination"
+msgstr "Fecha Caducidad Reconocimiento Médico"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_prevention_service_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_prevention_service_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__date_expiration_prevention_service_certificate
+msgid "Expiration Date Prevention Service"
+msgstr "Fecha Caducidad Servicio de Prevención"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_rea
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_rea
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__date_expiration_rea
+msgid "Expiration Date REA"
+msgstr "Fecha Caducidad REA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_expiration_tax_authority_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__date_expiration_tax_authority_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__date_expiration_tax_authority_certificate
+msgid "Expiration Date Tax Authority"
+msgstr "Fecha Caducidad Hacienda"
+
+#. module: work
+#: model:mail.template,subject:work.mail_template_invoice
+msgid "Factura"
+msgstr "Factura"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__state__2_finished
+msgid "Finished"
+msgstr "Finalizado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Contactos)"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_freelance
+#: model:ir.model,name:work.model_work_hist_freelance_receipt
+#: model:ir.ui.menu,name:work.menu_freelance
+#: model_terms:ir.ui.view,arch_db:work.view_hist_freelance_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_freelance_list
+msgid "Freelance Receipt"
+msgstr "Recibo de Autónomos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__freelance_payment_receipt
+#: model:ir.model.fields,field_description:work.field_res_users__freelance_payment_receipt
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__freelance_payment_receipt
+msgid "Freelance payment receipt"
+msgstr "Recibo de pago de Autónomos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__freelance_payment_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__freelance_payment_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__freelance_payment_receipt_file_name
+msgid "Freelance payment receipt File"
+msgstr "Recibo de pago de Autónomos"
+
+#. module: work
+#: model_terms:ir.ui.view,arch_db:work.project_work_certification_view_form
+msgid "General"
+msgstr "Factura"
+
+#. module: work
+#: code:addons/sca_addons/work/models/project.py:0
+#: code:addons/work/models/project.py:0
+#, python-format
+msgid "Gestion de Residuos"
+msgstr "Gestión de Residuos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__date_get_in
+msgid "Get in date"
+msgstr "Fecha Entrada"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__id
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__id
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__id
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__id
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__id
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__id
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__id
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__id
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__id
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__id
+#: model:ir.model.fields,field_description:work.field_work_waste__id
+#: model:ir.model.fields,field_description:work.field_work_waste_management__id
+#: model:ir.model.fields,field_description:work.field_work_work_certification__id
+#: model:ir.model.fields,field_description:work.field_work_work_material__id
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__id
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__id
+msgid "ID"
+msgstr "ID"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_ita
+#: model:ir.model,name:work.model_work_hist_ita
+#: model:ir.model.fields,field_description:work.field_res_partner__ita
+#: model:ir.model.fields,field_description:work.field_res_users__ita
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__ita
+#: model:ir.ui.menu,name:work.menu_ita
+#: model_terms:ir.ui.view,arch_db:work.view_hist_ita_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_ita_list
+msgid "ITA"
+msgstr "ITA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__ita_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__ita_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__ita_file_name
+msgid "ITA File"
+msgstr "ITA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una excepción en la actividad."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__message_needaction
+#: model:ir.model.fields,help:work.field_work_work_certification__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, tiene mensajes nuevos que requieren su atención."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__message_has_error
+#: model:ir.model.fields,help:work.field_work_work_certification__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen error de envío."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__email_payments
+#: model:ir.model.fields,help:work.field_res_partner__email_prevention
+#: model:ir.model.fields,help:work.field_res_users__email_payments
+#: model:ir.model.fields,help:work.field_res_users__email_prevention
+msgid "If doesnt exists, administration email will be used"
+msgstr "Si no existe, se usará el email administración"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_account_analytic_line__active
+msgid ""
+"If the active field is set to False, it will allow you to hide the line "
+"without removing it."
+msgstr "Si se marca a falso, podrás ocultar las líneas sin borrarlas."
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__state__1_in_progress
+msgid "In Progress"
+msgstr "En Curso"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__job_risks_check
+msgid "Job Risks"
+msgstr "Información Riesgos Puesto Trabajo"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__job_risks
+msgid "Job Risks Doc"
+msgstr "Archivo Información Riesgos Puesto Trabajo"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__job_risks_file_name
+msgid "Job Risks File"
+msgstr "Archivo Información Riesgos Puesto Trabajo"
+
+#. module: work
+#: model:ir.model,name:work.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: work
+#: model:ir.model,name:work.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__weight
+msgid "Kg"
+msgstr "Kg"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_ita____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_rea____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate____last_update
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt____last_update
+#: model:ir.model.fields,field_description:work.field_work_waste____last_update
+#: model:ir.model.fields,field_description:work.field_work_waste_management____last_update
+#: model:ir.model.fields,field_description:work.field_work_work_certification____last_update
+#: model:ir.model.fields,field_description:work.field_work_work_material____last_update
+#: model:ir.model.fields,field_description:work.field_work_work_outsource____last_update
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación en"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__write_uid
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__write_uid
+#: model:ir.model.fields,field_description:work.field_work_waste__write_uid
+#: model:ir.model.fields,field_description:work.field_work_waste_management__write_uid
+#: model:ir.model.fields,field_description:work.field_work_work_certification__write_uid
+#: model:ir.model.fields,field_description:work.field_work_work_material__write_uid
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__write_uid
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__write_date
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__write_date
+#: model:ir.model.fields,field_description:work.field_work_waste__write_date
+#: model:ir.model.fields,field_description:work.field_work_waste_management__write_date
+#: model:ir.model.fields,field_description:work.field_work_work_certification__write_date
+#: model:ir.model.fields,field_description:work.field_work_work_material__write_date
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__write_date
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: work
+#: model:ir.model,name:work.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__is_licensed
+msgid "Licenses"
+msgstr "Licencias"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__is_liquidation
+msgid "Liquidation"
+msgstr "Liquidación"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__machinery_use_check
+msgid "Machinery Use Information"
+msgstr "Autorización uso de Maquinaria"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__machinery_use
+msgid "Machinery Use Information Doc"
+msgstr "Adjunto Autorización uso de Maquinaria"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__machinery_use_file_name
+msgid "Machinery Use Information File"
+msgstr "Adjunto Autorización uso de Maquinaria"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto Principal"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__management_type__pavilion
+msgid "Managed in pavilion"
+msgstr "Gestionado en Pabellón"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__management_type
+msgid "Management Type"
+msgstr "Tipo de Gestión"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__is_work_center_open
+msgid "Management of documentation related to the opening of a work center"
+msgstr ""
+"Gestión de la documentación relacionada con la apertura del centro de "
+"trabajo"
+
+#. module: work
+#: model:ir.model,name:work.model_work_work_material
+#: model_terms:ir.ui.view,arch_db:work.project_work_certification_view_form
+msgid "Material"
+msgstr "Material"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__medical_examination
+#: model:ir.model.fields,field_description:work.field_res_users__medical_examination
+msgid "Medical Examination"
+msgstr "Reconocimiento Médico"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__medical_examination
+msgid "Medical Examination Doc"
+msgstr "Archivo Reconocimiento Médico"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__date_medical_examination
+msgid "Medical Examination Expiration date"
+msgstr "Fecha Caducidad Reconocimiento Médico"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__medical_examination_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__medical_examination_file_name
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__medical_examination_file_name
+msgid "Medical Examination File"
+msgstr "Archivo Reconocimiento Médico"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_has_error
+msgid "Message Delivery error"
+msgstr "Error envío mensaje"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__freelance_payment_receipt
+#: model:ir.model.fields,help:work.field_res_partner__freelance_payment_receipt_file_name
+#: model:ir.model.fields,help:work.field_res_partner__ita
+#: model:ir.model.fields,help:work.field_res_partner__ita_file_name
+#: model:ir.model.fields,help:work.field_res_partner__rlc
+#: model:ir.model.fields,help:work.field_res_partner__rlc_file_name
+#: model:ir.model.fields,help:work.field_res_partner__rlc_rnt_receipt
+#: model:ir.model.fields,help:work.field_res_partner__rlc_rnt_receipt_file_name
+#: model:ir.model.fields,help:work.field_res_partner__rnt
+#: model:ir.model.fields,help:work.field_res_partner__rnt_file_name
+#: model:ir.model.fields,help:work.field_res_users__freelance_payment_receipt
+#: model:ir.model.fields,help:work.field_res_users__freelance_payment_receipt_file_name
+#: model:ir.model.fields,help:work.field_res_users__ita
+#: model:ir.model.fields,help:work.field_res_users__ita_file_name
+#: model:ir.model.fields,help:work.field_res_users__rlc
+#: model:ir.model.fields,help:work.field_res_users__rlc_file_name
+#: model:ir.model.fields,help:work.field_res_users__rlc_rnt_receipt
+#: model:ir.model.fields,help:work.field_res_users__rlc_rnt_receipt_file_name
+#: model:ir.model.fields,help:work.field_res_users__rnt
+#: model:ir.model.fields,help:work.field_res_users__rnt_file_name
+#: model:ir.model.fields,help:work.field_work_hist_freelance_receipt__freelance_payment_receipt
+#: model:ir.model.fields,help:work.field_work_hist_freelance_receipt__freelance_payment_receipt_file_name
+#: model:ir.model.fields,help:work.field_work_hist_ita__ita
+#: model:ir.model.fields,help:work.field_work_hist_ita__ita_file_name
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rlc
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rlc_file_name
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rlc_rnt_receipt
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rlc_rnt_receipt_file_name
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rnt
+#: model:ir.model.fields,help:work.field_work_hist_rlc_rnt__rnt_file_name
+msgid "Monthly Expiration"
+msgstr "Caducidad Mensual"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__ss_certificate
+#: model:ir.model.fields,help:work.field_res_partner__ss_certificate_file_name
+#: model:ir.model.fields,help:work.field_res_users__ss_certificate
+#: model:ir.model.fields,help:work.field_res_users__ss_certificate_file_name
+#: model:ir.model.fields,help:work.field_work_hist_ss_certificate__ss_certificate
+#: model:ir.model.fields,help:work.field_work_hist_ss_certificate__ss_certificate_file_name
+msgid ""
+"Monthly certificate of being up to date with payments with Social Security"
+msgstr ""
+"Certificado mensual de estar al corriente de pagos con la Seguridad Social"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_res_partner__workers_receipt
+#: model:ir.model.fields,help:work.field_res_partner__workers_receipt_file_name
+#: model:ir.model.fields,help:work.field_res_users__workers_receipt
+#: model:ir.model.fields,help:work.field_res_users__workers_receipt_file_name
+#: model:ir.model.fields,help:work.field_work_hist_workers_receipt__workers_receipt
+#: model:ir.model.fields,help:work.field_work_hist_workers_receipt__workers_receipt_file_name
+msgid ""
+"Monthly certificate of being up to date with payments with their workers"
+msgstr "Certificado mensual de estar al corriente de pagos con Hacienda"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__name
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha Limite próxima Actividad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen próxima Actividad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo de próxima Actividad"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__dsc__not_sent
+#: model:ir.model.fields.selection,name:work.selection__project_project__sa__not_sent
+#: model:ir.model.fields.selection,name:work.selection__work_waste_management__state__not_sent
+msgid "Not Sent"
+msgstr "No enviado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_crm_lead__opportunity_code
+#: model:ir.model.fields,field_description:work.field_project_project__opportunity_id
+msgid "Opportunity Code"
+msgstr "Código Oportunidad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_hist_accident_insurance__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_freelance_receipt__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_rc_insurance__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__outsource_id
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__outsource_id
+msgid "Outsource Company"
+msgstr "Subcontrata"
+
+#. module: work
+#: model:ir.ui.menu,name:work.menu_documentacion
+msgid "Outsource Documentation"
+msgstr "Documentación Subcontratas"
+
+#. module: work
+#: model_terms:ir.ui.view,arch_db:work.project_work_certification_view_form
+#: model_terms:ir.ui.view,arch_db:work.view_outsource_form
+#: model_terms:ir.ui.view,arch_db:work.view_outsource_list
+msgid "Outsources"
+msgstr "Subcontratas"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__work_outsources_ids
+msgid "Outsourcing Companyes"
+msgstr "Subcontratas"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__prl_formation
+#: model:ir.model.fields,field_description:work.field_res_users__prl_formation
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__prl_formation_check
+msgid "PRL Formation"
+msgstr "Formación PRL"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__prl_formation
+msgid "PRL Formation Doc"
+msgstr "Archivo Formación PRL"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_outsource_workers__prl_formation_file_name
+msgid "PRL Formation File"
+msgstr "Archivo Formación PRL"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__payable
+msgid "Payable"
+msgstr "Pagable"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__payment_method
+msgid "Payment Method"
+msgstr "Método de Pago"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__email_payments
+#: model:ir.model.fields,field_description:work.field_res_users__email_payments
+msgid "Payments Email"
+msgstr "Email Pagos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__penalties
+msgid "Penalties"
+msgstr "Penalizaciones"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__penalties_amount
+msgid "Penalties Amount"
+msgstr "Importe Penalizaciones"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__penalties_date_start
+msgid "Penalties Start date"
+msgstr "Fecha Inicio de Penalizaciones"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__penalties
+msgid "Penalties for the late delivery of the work"
+msgstr "Penalizaciones por el retraso en la entrega de la obra"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__penalties_amount
+msgid "Penalty amount per day late"
+msgstr "Cantidad Penalización por día retrasado"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__account_move__computed_validation_state__pending
+#: model:ir.model.fields.selection,name:work.selection__account_move__validation_state__pending
+#: model:ir.model.fields.selection,name:work.selection__work_work_certification__state__pending
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__prescriber_id
+msgid "Prescriber"
+msgstr "Administrador de Fincas"
+
+#. module: work
+#: model:mail.template,subject:work.mail_template_sale_order_structures
+msgid "Presupuesto Estructura"
+msgstr "Presupuesto Estructura"
+
+#. module: work
+#: model:mail.template,subject:work.mail_template_sale_order_facade
+msgid "Presupuesto Fachada"
+msgstr "Presupuesto Fachada"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__prevention_coordinator_id
+msgid "Prevention Coordinator"
+msgstr "Coordinador de Seguridad"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__email_prevention
+#: model:ir.model.fields,field_description:work.field_res_users__email_prevention
+msgid "Prevention Email"
+msgstr "Email Prevención"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_prevention_service
+#: model:ir.model,name:work.model_work_hist_prevention_service
+#: model:ir.ui.menu,name:work.menu_prevention_service
+#: model_terms:ir.ui.view,arch_db:work.view_hist_prevention_service_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_prevention_service_list
+msgid "Prevention Service"
+msgstr "Servicio de Prevención"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__prevention_service_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__prevention_service_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__prevention_service_certificate
+msgid "Prevention Service Certificate"
+msgstr "Certificado del Servicio de Prevención"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__prevention_service_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__prevention_service_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_prevention_service__prevention_service_certificate_file_name
+msgid "Prevention Service Certificate File"
+msgstr "Archivo Certificado del Servicio de Prevención"
+
+#. module: work
+#: model:ir.model,name:work.model_project_project
+#: model:ir.model.fields,field_description:work.field_work_work_certification__project_id
+#: model:ir.model.fields,field_description:work.field_work_work_material__project_id
+#: model:ir.model.fields,field_description:work.field_work_work_outsource__project_id
+msgid "Project"
+msgstr "Obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move_line__related_project_id
+msgid "Project Analytic Account"
+msgstr "Cuenta Analítica Proyecto"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__project_id_dsc
+msgid "Project DSC"
+msgstr "Obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__project_id_sa
+msgid "Project SA"
+msgstr "Obra"
+
+#. module: work
+#: model:ir.ui.menu,name:work.submenu_projects
+msgid "Projects"
+msgstr "Obras"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_material__partner_id
+#: model_terms:ir.ui.view,arch_db:work.work_form_material
+msgid "Provider"
+msgstr "Proveedor"
+
+#. module: work
+#: model_terms:ir.ui.view,arch_db:work.work_list_material
+msgid "Provider List"
+msgstr "Lista de Proveedores"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__provider_ids
+msgid "Providers"
+msgstr "Proveedores"
+
+#. module: work
+#: model:ir.model,name:work.model_work_hist_rc_insurance
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rc_insurance_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rc_insurance_list
+msgid "RC Insurance"
+msgstr "Seguro RC"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_rea
+#: model:ir.model,name:work.model_work_hist_rea
+#: model:ir.model.fields,field_description:work.field_res_partner__rea
+#: model:ir.model.fields,field_description:work.field_res_users__rea
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__rea
+#: model:ir.ui.menu,name:work.menu_rea
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rea_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rea_list
+msgid "REA"
+msgstr "REA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rea_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rea_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rea__rea_file_name
+msgid "REA File"
+msgstr "REA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rlc
+#: model:ir.model.fields,field_description:work.field_res_users__rlc
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rlc
+msgid "RLC"
+msgstr "RLC"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rlc_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rlc_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rlc_file_name
+msgid "RLC File"
+msgstr "RLC"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_rlc_rnt
+#: model:ir.model,name:work.model_work_hist_rlc_rnt
+#: model:ir.ui.menu,name:work.menu_rlc_rnt
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rlc_rnt_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_rlc_rnt_list
+msgid "RLC and RNT"
+msgstr "RLC y RNT"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rlc_rnt_receipt
+#: model:ir.model.fields,field_description:work.field_res_users__rlc_rnt_receipt
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rlc_rnt_receipt
+msgid "RLC and RNT Payment Receipt"
+msgstr "Recibo de Pago RLC y RNT"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rlc_rnt_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rlc_rnt_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rlc_rnt_receipt_file_name
+msgid "RLC and RNT Payment Receipt File"
+msgstr "Recibo de Pago RLC y RNT"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rnt
+#: model:ir.model.fields,field_description:work.field_res_users__rnt
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rnt
+msgid "RNT"
+msgstr "RNT"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__rnt_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__rnt_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__rnt_file_name
+msgid "RNT File"
+msgstr "RNT"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__account_move__computed_validation_state__rejected
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_crm_lead__date_request
+msgid "Request Date"
+msgstr "Fecha Solicitud"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: work
+#: code:addons/sca_addons/work/models/project.py:0
+#: code:addons/work/models/project.py:0
+#, python-format
+msgid ""
+"Revise los campos SA y DSC de la gestion de residuos, alguno de ellos no ha "
+"sido aceptado."
+msgstr ""
+"Revise los campos SA y DSC de la gestion de residuos, alguno de ellos no ha "
+"sido aceptado."
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__sa
+msgid "SA"
+msgstr "SA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__work_wastes_ids_sa
+msgid "SA Wastes"
+msgstr "Residuos SA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error envío SMS"
+
+#. module: work
+#: model:ir.model,name:work.model_work_hist_ss_certificate
+#: model_terms:ir.ui.view,arch_db:work.view_hist_ss_certificate_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_ss_certificate_list
+msgid "SS Certificate"
+msgstr "Certificado Seguridad Social"
+
+#. module: work
+#: model:ir.model,name:work.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__date_send
+msgid "Send date"
+msgstr "Fecha Envío"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__dsc__sent
+#: model:ir.model.fields.selection,name:work.selection__project_project__sa__sent
+#: model:ir.model.fields.selection,name:work.selection__work_waste_management__state__sent
+msgid "Sent"
+msgstr "Enviado"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__project_project__state__0_contract
+msgid "Signed Contract"
+msgstr "Contrato Firmado"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_ss_certificate
+#: model:ir.model.fields,field_description:work.field_res_partner__ss_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__ss_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__ss_certificate
+#: model:ir.ui.menu,name:work.menu_ss_certificate
+msgid "Social Security Certificate"
+msgstr "Certificado Seguridad Social"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__ss_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__ss_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__ss_certificate_file_name
+msgid "Social Security Certificate File"
+msgstr "Certificado Seguridad Social"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__date_start
+msgid "Start date"
+msgstr "Fecha de Inicio"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_waste_management__state
+msgid "State"
+msgstr "Estado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencida: la fecha de vencimiento ya ha pasado\n"
+"Hoy: la fecha de actividad es hoy\n"
+"Planificado: actividades futuras."
+
+#. module: work
+#: model:ir.model,name:work.model_sale_subscription
+msgid "Subscription Extension"
+msgstr "Extensión de Suscripción"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_tax_certificate
+#: model:ir.model.fields,field_description:work.field_res_partner__tax_authority_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__tax_authority_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__tax_authority_certificate
+#: model:ir.ui.menu,name:work.menu_tax_certificate
+msgid "Tax Authority Certificate"
+msgstr "Certificado Hacienda"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__tax_authority_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__tax_authority_certificate_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_tax_certificate__tax_authority_certificate_file_name
+msgid "Tax Authority Certificate File"
+msgstr "Certificado Hacienda"
+
+#. module: work
+#: model:ir.model,name:work.model_work_hist_tax_certificate
+#: model_terms:ir.ui.view,arch_db:work.view_hist_tax_certificate_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_tax_certificate_list
+msgid "Tax Certificate"
+msgstr "Certificado Hacienda"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__is_estimated
+msgid "The certification has been estimated from administration"
+msgstr "La certificación ha sido estimada por la administración"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__is_liquidation
+msgid "The certification is the liquidation one"
+msgstr "Es la certificación de liquidación"
+
+#. module: work
+#: code:addons/sca_addons/work/models/account_move.py:0
+#: code:addons/work/models/account_move.py:0
+#, python-format
+msgid "The work needs to have stablished a work manager"
+msgstr "Debe establecerse un Jefe de Obra para la Obra"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de excepción de la actividad en el registro."
+
+#. module: work
+#: model:ir.model.fields,help:work.field_crm_lead__opportunity_code
+msgid "Unique oportunity code"
+msgstr "Código de oportunidad única"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__project_code
+msgid "Unique work code"
+msgstr "Código de Obra Único"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes sin leer"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de Mensajes sin leer"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__work_manager_id
+msgid "User responsible of the managing of the work"
+msgstr "Usuario del Jefe de Obra"
+
+#. module: work
+#: model:ir.model.fields.selection,name:work.selection__account_move__computed_validation_state__validated
+#: model:ir.model.fields.selection,name:work.selection__account_move__validation_state__validated
+msgid "Validated"
+msgstr "Validado"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__validation_state
+msgid "Validation State"
+msgstr "Estado de Validación"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__computed_validation_state
+msgid "Validation Status"
+msgstr "Estado de Validación"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__validator_id
+msgid "Validator"
+msgstr "Validador"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_validity_ita
+#: model:ir.model.fields,field_description:work.field_res_users__date_validity_ita
+#: model:ir.model.fields,field_description:work.field_work_hist_ita__date_validity_ita
+msgid "Validity Date ITA"
+msgstr "Fecha Validez ITA"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_validity_rlc_rnt
+#: model:ir.model.fields,field_description:work.field_res_users__date_validity_rlc_rnt
+#: model:ir.model.fields,field_description:work.field_work_hist_rlc_rnt__date_validity_rlc_rnt
+msgid "Validity Date RLC and RNT"
+msgstr "Fecha Validez RLC/RNT"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_validity_ss_certificate
+#: model:ir.model.fields,field_description:work.field_res_users__date_validity_ss_certificate
+#: model:ir.model.fields,field_description:work.field_work_hist_ss_certificate__date_validity_ss_certificate
+msgid "Validity Date Social Security"
+msgstr "Fecha Validez Seguridad Social"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__date_validity_workers_receipt
+#: model:ir.model.fields,field_description:work.field_res_users__date_validity_workers_receipt
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__date_validity_workers_receipt
+msgid "Validity Date Workers Monthly Receipt"
+msgstr "Fecha Validez Recibo Mensual Trabajadores"
+
+#. module: work
+#: model:ir.model,name:work.model_work_waste
+#: model_terms:ir.ui.view,arch_db:work.view_work_waste_list
+msgid "Waste"
+msgstr "Residuo"
+
+#. module: work
+#: model:ir.model,name:work.model_work_waste_management
+#: model_terms:ir.ui.view,arch_db:work.project_work_certification_view_form
+#: model_terms:ir.ui.view,arch_db:work.view_work_waste_management_form
+#: model_terms:ir.ui.view,arch_db:work.view_work_waste_management_list
+msgid "Waste Management"
+msgstr "Gestión de Residuos"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_work_work_certification__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_work_work_certification__website_message_ids
+msgid "Website communication history"
+msgstr "Historial comunicación sitio web"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_account_move__project_id
+msgid "Work"
+msgstr "Obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__work_certification_ids
+msgid "Work Certifications"
+msgstr "Certificaciones de Obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__project_code
+msgid "Work Code"
+msgstr "Código de Obra"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__work_manager_id
+msgid "Work Manager"
+msgstr "Jefe de Obra"
+
+#. module: work
+#: model:ir.model,name:work.model_work_work_outsource
+msgid "Work Outsource"
+msgstr "Subcontrata"
+
+#. module: work
+#: model:ir.model,name:work.model_work_work_outsource_workers
+msgid "Work Outsource Workers"
+msgstr "Trabajadores Subcontrata"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__state
+msgid "Work Status"
+msgstr "Estado de la Obra"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_account_move__project_id
+msgid "Work associated with this invoice. Only for subcontratas"
+msgstr "Obra asociada a esta factura. Solo para subcontratas"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_project_project__is_work_center_open
+msgid "Work center opening"
+msgstr "Apertura Centro de Trabajo"
+
+#. module: work
+#: model:ir.model.fields,help:work.field_project_project__is_licensed
+msgid "Work has the required licenses"
+msgstr "La obra tiene las licencias necesarias"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__workers_ids
+#: model:ir.model.fields,field_description:work.field_res_users__workers_ids
+#: model_terms:ir.ui.view,arch_db:work.res_partner_form_extended_outsource
+#: model_terms:ir.ui.view,arch_db:work.view_outsource_workers_form
+#: model_terms:ir.ui.view,arch_db:work.view_outsource_workers_list
+msgid "Workers"
+msgstr "Trabajadores"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__workers_receipt
+#: model:ir.model.fields,field_description:work.field_res_users__workers_receipt
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__workers_receipt
+msgid "Workers Monthly Receipt"
+msgstr "Recibo mensual Trabajadores"
+
+#. module: work
+#: model:ir.model.fields,field_description:work.field_res_partner__workers_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_res_users__workers_receipt_file_name
+#: model:ir.model.fields,field_description:work.field_work_hist_workers_receipt__workers_receipt_file_name
+msgid "Workers Monthly Receipt File"
+msgstr "Recibo mensual Trabajadores"
+
+#. module: work
+#: model:ir.actions.act_window,name:work.action_workers_receipt
+#: model:ir.model,name:work.model_work_hist_workers_receipt
+#: model:ir.ui.menu,name:work.menu_workers_receipt
+#: model_terms:ir.ui.view,arch_db:work.view_hist_workers_receipt_form
+#: model_terms:ir.ui.view,arch_db:work.view_hist_workers_receipt_list
+msgid "Workers Receipt"
+msgstr "Recibo Trabajadores"

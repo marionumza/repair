@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data> 
+        <!-- Pagos -->
+        <record id="mail_template_payment_documentation_error" model="mail.template">            
+            <field name="name">Documentacion de Pago</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">4</field>
+            <field name="email_from">proveedores@gruporepair.com</field>
+            <field name="email_cc">edurne@gruporepair.com</field>
+            <field name="subject">Documentacion de Pago</field>
+            <field name="email_to">${object.email_payments or object.email | safe}</field>
+            <field name="reply_to">edurne@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Estimado Sr./Sra.,
+                                        <br/> <br/><br/>
+                                        Mensualmente, previamente al pago de cada factura, la subcontrata deberá entregar a Repair los siguientes documentos:
+                                        <ul> <br/>
+                                            <li>Certificado de estar al corriente de pagos con la seguridad social.</li>
+                                            <li>Certificado de Contratación de estar al corriente de pagos con la hacienda.</li>
+                                            % if object.category_id.id == 6:
+                                                <li>
+                                                    Recibo mensual firmado por parte de los trabajadores de la subcontrata, 
+                                                    en la que se indique que los trabajadores están al corriente de sus sueldos y salarios, 
+                                                    y que no tienen ninguna cantidad pendiente de que se les abone por parte de la subcontrata.
+                                                </li>
+                                                <li>ITA mensual.</li>
+                                                <li>RLC y RNT del mes, así como el recibo bancario correspondiente.</li>
+                                            % endif
+                                        </ul>
+                                        En nuestros archivos consta que a fecha de hoy <strong>no hemos recibido la siguiente documentación</strong>:
+                                        <ul> <br/>
+                                            % for error in ctx['errors']
+                                                <li>${error}</li>
+                                            % endfor
+                                        </ul>
+                                        Por lo que, os solicitamos que nos enviéis la documentación solicitada, a la mayor brevedad posible, para poder proceder al pago el próximo día 20 sin demoras.
+                                        <br/><br/><br/>
+                                        Atentamente,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+
+        <!-- Prevencion -->
+        <record id="mail_template_prevention_weekly_documentation_error" model="mail.template">            
+            <field name="name">Documentacion de Prevencion</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">4</field>
+            <field name="email_from">proveedores@gruporepair.com</field>
+            <field name="subject">Documentacion de Prevencion</field>
+            <field name="email_to">${object.email_prevention or object.email | safe}</field>
+            <field name="reply_to">isusko@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Buenos días,
+                                        <br/> <br/><br/>
+                                        En las próximas fechas caducará la siguiente documentación:
+                                        <br/> <br/>
+                                        % if ctx['errors']:
+                                            De sus trabajadores:
+                                            <ul> <br/>
+                                                % for error in ctx['errors']
+                                                    <li>${error[0]}</li>
+                                                    <ul>
+                                                        % for err in error[1]
+                                                        <li>${err}</li>
+                                                        % endfor
+                                                    </ul>
+                                                % endfor
+                                            </ul>
+                                        % endif
+                                        % if ctx['freelance_errors']:
+                                            <ul> <br/>
+                                                % for error in ctx['freelance_errors']
+                                                    <li>${error}</li>
+                                                % endfor
+                                            </ul>
+                                        % endif
+                                        Les recordamos que es preciso tenerla actualizada para no tener ningún inconveniente en el acceso a nuestras obras.
+                                        <br/><br/><br/>
+                                        Un saludo,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+
+        <record id="mail_template_prevention_daily_documentation_error" model="mail.template">            
+            <field name="name">Documentacion de Prevencion</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">4</field>
+            <field name="email_from">proveedores@gruporepair.com</field>
+            <field name="email_cc">isusko@gruporepair.com</field>
+            <field name="subject">Documentacion de Prevencion</field>
+            <field name="email_to">${object.email_prevention or object.email | safe}</field>
+            <field name="reply_to">isusko@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Buenos días,
+                                        <br/> <br/><br/>
+                                        En las próximas fechas caducará la siguiente documentación:
+                                        <br/> <br/>
+                                        % if ctx['outsource_errors']:
+                                            <strong>De su empresa:</strong>
+                                            <ul> <br/>
+                                                % for error in ctx['outsource_errors']
+                                                    <li>${error}</li>
+                                                % endfor
+                                            </ul>
+                                        % endif
+                                        
+                                        % if ctx['worker_errors']:
+                                            <strong>De sus trabajadores:</strong>
+                                            <ul> <br/>
+                                                % for error in ctx['worker_errors']
+                                                    <li>${error[0]}</li>
+                                                    <ul>
+                                                        % for err in error[1]
+                                                        <li>${err}</li>
+                                                        % endfor
+                                                    </ul>
+                                                % endfor
+                                            </ul>
+                                         % endif
+                                        Les recordamos que es preciso tenerla actualizada para no tener ningún inconveniente en el acceso a nuestras obras.
+                                        <br/><br/><br/>
+                                        Un saludo,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+
+        <!-- Facturas -->
+        <record id="mail_template_invoice" model="mail.template">            
+            <field name="name">Factura</field>
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">3</field>
+            <field name="email_from">clientes@gruporepair.com</field>
+            <field name="subject">Factura</field>
+            <field name="email_to">${object.partner_id.email | safe}</field>
+            <field name="reply_to">garana@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Muy buenos días,
+                                        <br/><br/><br/>
+                                        Os enviamos la factura del anticipo del __ pactado para la obra de _____________, por importe de 
+                                        <strong>${format_amount(object.amount_total, object.currency_id)}</strong>, que cargaremos el 
+                                        ${object.invoice_date_due.strftime('%d de %B de %Y')}
+                                        en la cuenta de la comunidad.
+                                        <br/><br/>
+                                        El resto del presupuesto aceptado lo cobraremos en ___ mensualidades de _________ cada una de ellas, desde el ______ al _______.
+                                        <br/><br/>
+                                        Quedo a la espera de que me facilitéis el número de cuenta de la comunidad en el que nos autorizáis a domiciliar los pagos pactados.
+                                        <br/><br/><br/>
+
+                                        Os enviamos la factura del pago ___ de los __ pactados para la obra de _____________.
+                                        <br/><br/>
+                                        El importe de la factura, 
+                                        <strong>${format_amount(object.amount_total, object.currency_id)}</strong>, lo cargaremos el 
+                                        ${object.invoice_date_due.strftime('%d de %B de %Y')} 
+                                        en la cuenta facilitada de la comunidad.
+                                        <br/><br/><br/>
+
+                                        Os enviamos la factura final de la obra de ___________, junto con el detalle de los trabajos realizados con el visto bueno de la dirección de la obra contratada por la comunidad.
+                                        <br/><br/>
+                                        Podéis hacernos el ingreso en la cuenta que indicamos en la propia factura. En caso de que prefiráis que os giremos nosotros un recibo podéis enviarme el número de cuenta de la comunidad y así lo haremos.
+                                        <br/><br/>
+                                        El importe de la factura, 
+                                        <strong>${format_amount(object.amount_total, object.currency_id)}</strong>, lo giraremos en la cuenta de la comunidad con los siguientes vencimientos:
+                                        <br/><br/>
+                                        Para cualquier duda respectos a los trabajos realizados podéis contactar con 
+                                        % if object.project_id.work_manager_id:
+                                            ${object.project_id.work_manager_id.name} 
+                                        % else:
+                                            ___________ 
+                                        % endif
+                                        en el 
+                                        % if object.project_id.work_manager_id.phone:
+                                            ${object.project_id.work_manager_id.phone}
+                                        % else:
+                                            ___________
+                                        % endif
+                                        <br/><br/>
+                                        Recordaros, que el ____ de este mes de _________ giraremos los ______ € del pago __ de los ___ pactados para el presupuesto inicial (Fra. nº ____ del _____).
+                                        <br/><br/>
+                                        Os adjuntamos también copia de las facturas de la obra firmadas y sellada para el trámite de posibles subvenciones.
+                                        <br/><br/><br/>
+                                        Un saludo,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+
+
+        <!-- Presupuestos -->
+        <record id="mail_template_sale_order_structures" model="mail.template">            
+            <field name="name">Presupuesto Estructura</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">2</field>
+            <field name="email_from">presupuestos@gruporepair.com</field>
+            <field name="subject">Presupuesto Estructura</field>
+            <field name="email_to">${object.partner_id.email | safe}</field>
+            <field name="reply_to">ainhoa@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Buenos días,
+                                        <br/> <br/><br/>
+                                        Adjunto al presente remitimos presupuesto solicitado relativo a los trabajos de 
+                                        _____
+                                        a realizar en la ${object.partner_id.name}.
+                                        <br/><br/>
+                                        Para cualquier duda o aclaración al respecto no dude en ponerse en contacto con nosotros.
+                                        <br/><br/>
+                                        De conformidad con el mismo agradeceríamos nos sea remitida su aceptación.
+                                        <br/><br/><br/>
+                                        Un saludo,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+
+        <record id="mail_template_sale_order_facade" model="mail.template">            
+            <field name="name">Presupuesto Fachada</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">es_ES</field>
+            <field name="mail_server_id">2</field>
+            <field name="email_from">presupuestos@gruporepair.com</field>
+            <field name="subject">Presupuesto Fachada</field>
+            <field name="email_to">${object.partner_id.email | safe}</field>
+            <field name="reply_to">egonzalez@gruporepair.com</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0" style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"><tr><td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="590" style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                <tbody>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="middle">
+                                    <img src="/logo.png?company=1" style="padding: 0px; margin: 0px; height: auto; width: auto;" alt="${object.user_id.company_id.name}"/>
+                                </td></tr>
+                                <tr><td colspan="2" style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                <tr><td valign="top" style="font-size: 13px;">
+                                    <div>
+                                        Buenos días,
+                                        <br/> <br/><br/>
+                                        Adjunto al presente remitimos presupuesto solicitado relativo a los trabajos de 
+                                        _____
+                                        en la ${object.partner_id.name}.
+                                        _____________.
+                                        <br/><br/>
+                                        Quedamos a disposición de la Propiedad para cualquier aclaración adicional.
+                                        <br/><br/>
+                                        De conformidad con el mismo agradeceríamos nos sea remitida su aceptación.
+                                        <br/><br/><br/>
+                                        Atentamente,
+                                    </div>
+                                </td></tr>
+                                <tr><td style="text-align:center;">
+                                <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </td></tr>
+                </table>
+            </field>
+        </record>
+    </data> 
+</odoo>

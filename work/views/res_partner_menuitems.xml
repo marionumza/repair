@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <act_window id="action_rea" 
+            name="REA" 
+            res_model="work.hist_rea"
+            view_mode="tree,form"
+        /> 
+
+        <act_window id="action_rc_insurance" 
+            name="Civil Liability Insurance" 
+            res_model="work.hist_rc_insurance"
+            view_mode="tree,form"
+        /> 
+
+        <act_window id="action_accident_insurance" 
+            name="Accident Insurance" 
+            res_model="work.hist_accident_insurance"
+            view_mode="tree,form"
+        /> 
+
+        <act_window id="action_prevention_service" 
+            name="Prevention Service" 
+            res_model="work.hist_prevention_service"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_ss_certificate" 
+            name="Social Security Certificate" 
+            res_model="work.hist_ss_certificate"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_tax_certificate" 
+            name="Tax Authority Certificate" 
+            res_model="work.hist_tax_certificate"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_ita" 
+            name="ITA" 
+            res_model="work.hist_ita"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_workers_receipt" 
+            name="Workers Receipt" 
+            res_model="work.hist_workers_receipt"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_rlc_rnt" 
+            name="RLC and RNT" 
+            res_model="work.hist_rlc_rnt"
+            view_mode="tree,form"
+        />
+
+        <act_window id="action_freelance" 
+            name="Freelance Receipt" 
+            res_model="work.hist_freelance_receipt"
+            view_mode="tree,form"
+        />
+
+        <menuitem id="menu_documentacion" name="Outsource Documentation" parent="contacts.menu_contacts" sequence="10"/>
+            <menuitem id="menu_rea" action="action_rea" name="REA" parent="menu_documentacion" sequence="1"/>
+            <menuitem id="menu_rc_insurance" action="action_rc_insurance" name="Civil Liability Insurance" parent="menu_documentacion" sequence="2"/>
+            <menuitem id="menu_accident_insurance" action="action_accident_insurance" name="Accident Insurance" parent="menu_documentacion" sequence="3"/>
+            <menuitem id="menu_prevention_service" action="action_prevention_service" name="Prevention Service" parent="menu_documentacion" sequence="4"/>
+            <menuitem id="menu_ss_certificate" action="action_ss_certificate" name="Social Security Certificate" parent="menu_documentacion" sequence="5"/>
+            <menuitem id="menu_tax_certificate" action="action_tax_certificate" name="Tax Authority Certificate" parent="menu_documentacion" sequence="6"/>
+            <menuitem id="menu_ita" action="action_ita" name="ITA" parent="menu_documentacion" sequence="7"/>
+            <menuitem id="menu_workers_receipt" action="action_workers_receipt" name="Workers Receipt" parent="menu_documentacion" sequence="8"/>
+            <menuitem id="menu_rlc_rnt" action="action_rlc_rnt" name="RLC and RNT" parent="menu_documentacion" sequence="9"/>
+            <menuitem id="menu_freelance" action="action_freelance" name="Freelance Receipt" parent="menu_documentacion" sequence="10"/>
+
+    </data>
+</odoo>

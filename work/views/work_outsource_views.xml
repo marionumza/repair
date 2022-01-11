@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_outsource_list" model="ir.ui.view">
+            <field name="name">outsource list</field>
+            <field name="model">work.work_outsource</field>
+            <field name="arch" type="xml">
+                <tree string="Outsources">
+                    <field name="outsource_id"/>
+                    <field name="date_get_in"/>
+                    <field name="date_end"/>
+                    <field name="adhesion_certificate" filename="adhesion_certificate_file_name" invisible="1"/>
+                    <field name="adhesion_certificate_file_name"/>
+                    <field name="contract_required"/>
+                    <field name="contract" filename="contract_file_name" invisible="1"/>
+                    <field name="contract_file_name" attrs="{'invisible': [('contract_required', '=', False)]}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_outsource_form" model="ir.ui.view">
+            <field name="name">outsource Form</field>
+            <field name="model">work.work_outsource</field>
+            <field name="arch" type="xml">
+                <form string="Outsources">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "arriba">   
+                            <group name = "arriba_izquierda">
+                                <field name="outsource_id"/>
+                                <field name="adhesion_certificate" filename="adhesion_certificate_file_name"/>
+                                <field name="adhesion_certificate_file_name"  invisible="1"/>
+                            </group>
+                            <group name = "arriba_derecha">
+                                <field name="date_get_in"/>
+                                <field name="date_end"/>
+                            </group>
+                        </group>
+
+                        <group name="centro">   
+                            <group name = "centro_izquierda">
+                                <field name="contract_required"/>
+                            </group>
+                            <group name = "centro_derecha">
+                                <field name="contract" filename="contract_file_name" attrs="{'invisible': [('contract_required', '=', False)]}"/>
+                                <field name="contract_file_name" invisible="1"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_outsource_workers_list" model="ir.ui.view">
+            <field name="name">outsource workers list</field>
+            <field name="model">work.work_outsource_workers</field>
+            <field name="arch" type="xml">
+                <tree string="Workers">
+                    <field name="name"/>
+                    <!-- <field name="epi_handing_over" filename="epi_handing_over_file_name" invisible="1"/>
+                    <field name="epi_handing_over_file_name"/> -->
+                    <field name="date_epi_handing_over"/>
+                    <!-- <field name="medical_examination" filename="medical_examination_file_name" invisible="1"/>
+                    <field name="medical_examination_file_name"/> -->
+                    <field name="date_medical_examination"/>
+                    <field name="prl_formation_check"/>
+                    <field name="job_risks_check"/>
+                    <field name="machinery_use_check"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_outsource_workers_form" model="ir.ui.view">
+            <field name="name">outsource workers Form</field>
+            <field name="model">work.work_outsource_workers</field>
+            <field name="arch" type="xml">
+                <form string="Workers">
+                    <header>
+                    </header>  
+                    <sheet>
+                        <group name = "1">   
+                            <group name = "1_izquierda">
+                                <field name="outsource_id" readonly="1"/>
+                                <field name="name"/>
+                            </group>
+                            <group name = "1_derecha">
+                            </group>
+                        </group>
+                        <group name="2">   
+                            <group name = "2_izquierda">
+                                <field name="epi_handing_over" filename="epi_handing_over_file_name"/>
+                                <field name="epi_handing_over_file_name" invisible="1"/>
+                                <field name="date_epi_handing_over" attrs="{'required': [('epi_handing_over', '!=', False)]}"/>
+                            </group>
+                            <group name = "2_derecha">
+                                <field name="medical_examination" filename="medical_examination_file_name"/>
+                                <field name="medical_examination_file_name" invisible="1"/>
+                                <field name="date_medical_examination" attrs="{'required': [('medical_examination', '!=', False)]}"/>
+                            </group>
+                        </group>
+                        <group name="3">   
+                            <group name = "3_izquierda">
+                                <field name="prl_formation" filename="prl_formation_file_name"/>
+                                <field name="prl_formation_file_name" invisible="1"/>
+                                <field name="prl_formation_check"/>
+                            </group>
+                            <group name = "3_derecha">
+                                <field name="job_risks" filename="job_risks_file_name"/>
+                                <field name="job_risks_file_name" invisible="1"/>
+                                <field name="job_risks_check"/>
+                            </group>
+                        </group>
+                        <group name = "4">   
+                            <group name = "4_izquierda">
+                                <field name="machinery_use" filename="machinery_use_file_name"/>
+                                <field name="machinery_use_file_name" invisible="1"/>
+                                <field name="machinery_use_check"/>
+                            </group>
+                            <group name = "4_derecha">
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

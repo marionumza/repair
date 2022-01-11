@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="work_list_material" model="ir.ui.view">
+            <field name="name">work.material.list</field>
+            <field name="model">work.work_material</field>
+            <field name="arch" type="xml">
+                <tree string="Provider List">
+                    <field name="partner_id"/>
+                    <field name="budget_accepted" filename="budget_accepted_file_name" invisible="1"/>
+                    <field name="budget_accepted_file_name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="work_form_material" model="ir.ui.view">
+            <field name="name">work.material.form</field>
+            <field name="model">work.work_material</field>
+            <field name="arch" type="xml">
+                <form string="Provider">   
+                    <sheet>
+                        <group name = "1">   
+                            <group name = "1_izquierda">
+                                <field name="partner_id"/>
+                            </group>
+                            <group name = "1_derecha">
+                                <field name="budget_accepted" filename="budget_accepted_file_name"/>
+                                <field name="budget_accepted_file_name" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

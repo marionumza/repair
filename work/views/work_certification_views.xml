@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_certification_list" model="ir.ui.view">
+            <field name="name">certification list</field>
+            <field name="model">work.work_certification</field>
+            <field name="arch" type="xml">
+                <tree string="Certifications">
+                    <field name="name" optional="show"/>
+                    <field name="project_id" optional="show"/>
+                    <field name="architect_id" optional="show"/>
+                    <field name="amount" optional="show"/>
+                    <field name="state" optional="show"/>
+                    <field name="date_send" optional="show"/>
+                    <field name="date_accepted" optional="hide"/>
+                    <field name="is_estimated" optional="show"/>
+                    <field name="is_liquidation" optional="show"/>
+                    <field name="company_id" invisible="1"/>
+                    <field name="attached_file" filename="attached_file_name" optional="hide" invisible="1"/>
+                    <field name="attached_file_name" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+
+         <record id="view_certification_form" model="ir.ui.view">
+            <field name="name">certification Form</field>
+            <field name="model">work.work_certification</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <form string="Certifications">
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}" class="myStatusBar"/> 
+                    </header>  
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">                        
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Certification Name"/>
+                            </h1>
+                        </div>
+
+                        <group>   
+                            <group name = "cabecera_izquierda">
+                                <field name="project_id"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                            <group name = "cabecera_derecha">
+                                <field name="architect_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                                <field name="amount"/>
+                            </group>
+                        </group>
+
+                        <group>   
+                            <group name = "izquierda">
+                                <field name="date_send" widget="date"/>
+                                <field name="date_accepted" widget="date"/>
+                            </group>
+                            <group name = "derecha">
+                                <field name="is_estimated" widget="boolean"/>
+                                <field name="is_liquidation" widget="boolean"/>
+                            </group>
+                        </group>
+
+                        <group>   
+                            <group>
+                            </group>
+                            <group>
+                                <field name="attached_file" filename="attached_file_name"/>
+                                <field name="attached_file_name" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_certification_form_quick_create" model="ir.ui.view">
+            <field name="name">certification Form Quick Create</field>
+            <field name="model">work.work_certification</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <form string="Certifications">
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}" class="myStatusBar"/> 
+                    </header>    
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Certification Name"/>
+                            </h1>
+                        </div>
+
+                        <group>   
+                            <group name = "cabecera_izquierda">
+                                <field name="project_id" readonly="1"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                            <group name = "cabecera_derecha">
+                                <field name="architect_id" readonly="1"/>
+                                <field name="amount"/>
+                            </group>
+                        </group>
+
+                        <group>   
+                            <group name = "izquierda">
+                                <field name="date_send" widget="date"/>
+                                <field name="date_accepted" widget="date"/>
+                            </group>
+                            <group name = "derecha">
+                                <field name="is_estimated" widget="boolean"/>
+                                <field name="is_liquidation" widget="boolean"/>
+                            </group>
+                        </group>
+
+                        <group>   
+                            <group>
+                            </group>
+                            <group>
+                                <field name="attached_file" filename="attached_file_name"/>
+                                <field name="attached_file_name" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

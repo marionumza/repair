@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       
+        <record id="res_partner_form_extended_outsource" model="ir.ui.view">
+            <field name="name">Partner Outsources</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='website']" position="before"> 
+                    <field name="email_payments"  widget="email" attrs="{'invisible': [('category_id', 'not in', [6,8])]}"/>
+                    <field name="email_prevention"  widget="email" attrs="{'invisible': [('category_id', 'not in', [6,8])]}"/>
+                </xpath>
+                <xpath expr="//page[@name='internal_notes']" position="after"> 
+                    <page name="Documentation" string="Documentation" attrs="{'invisible': [('category_id', 'not in', [6,8])]}"> 
+                        <form string="Documentation">
+                            <sheet>
+                                <group name = "2">   
+                                    <group name = "2_izquierda_company" attrs="{'invisible': [('category_id', 'not in', 6)]}">
+                                        <field name="rea" filename="rea_file_name"/>
+                                        <field name="rea_file_name" invisible="1"/>
+                                        <field name="date_expiration_rea" attrs="{'required': [('rea', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "2_izquierda_freelance" attrs="{'invisible': [('category_id', 'not in', 8)]}">
+                                        <field name="freelance_payment_receipt" filename="freelance_payment_receipt_file_name"/>
+                                        <field name="freelance_payment_receipt_file_name" invisible="1"/>
+                                        <field name="date_expiration_freelance_payment_receipt" attrs="{'required': [('freelance_payment_receipt', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "2_derecha">
+                                        <field name="rc_insurance" filename="rc_insurance_file_name"/>
+                                        <field name="rc_insurance_file_name" invisible="1"/>
+                                        <field name="rc_insurance_payment" filename="rc_insurance_payment_file_name"/>
+                                        <field name="rc_insurance_payment_file_name" invisible="1"/>
+                                        <field name="date_expiration_rc_insurance" attrs="{'required': [('rc_insurance', '!=', False)]}"/>
+                                    </group>
+                                </group>
+                                <group name = "3" attrs="{'invisible': [('category_id', 'not in', 6)]}"> 
+                                    <group name = "3_izquierda">
+                                        <field name="accident_insurance" filename="accident_insurance_file_name"/>
+                                        <field name="accident_insurance_file_name" invisible="1"/>
+                                        <field name="accident_insurance_payment" filename="accident_insurance_payment_file_name"/>
+                                        <field name="accident_insurance_payment_file_name" invisible="1"/>
+                                        <field name="date_expiration_accident_insurance" attrs="{'required': [('accident_insurance', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "3_derecha">
+                                        <field name="prevention_service_certificate" filename="prevention_service_certificate_file_name"/>
+                                        <field name="prevention_service_certificate_file_name" invisible="1"/>
+                                        <field name="date_expiration_prevention_service_certificate"  attrs="{'required': [('prevention_service_certificate', '!=', False)]}"/>
+                                    </group>
+                                </group>
+                                <group name = "4">   
+                                    <group name = "4_izquierda">
+                                        <field name="ss_certificate" filename="ss_certificate_file_name"/>
+                                        <field name="ss_certificate_file_name" invisible="1"/>
+                                        <field name="date_validity_ss_certificate"  attrs="{'required': [('ss_certificate', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "4_derecha">
+                                        <field name="tax_authority_certificate" filename="tax_authority_certificate_file_name"/>
+                                        <field name="tax_authority_certificate_file_name" invisible="1"/>
+                                        <field name="date_expiration_tax_authority_certificate"  attrs="{'required': [('tax_authority_certificate', '!=', False)]}"/>
+                                    </group>
+                                </group>
+                                <group name = "5" attrs="{'invisible': [('category_id', 'not in', 6)]}">  
+                                    <group name = "5_izquierda">
+                                        <field name="ita" filename="ita_file_name"/>
+                                        <field name="ita_file_name" invisible="1"/>
+                                        <field name="date_validity_ita"  attrs="{'required': [('ita', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "5_derecha">
+                                        <field name="workers_receipt" filename="workers_receipt_file_name"/>
+                                        <field name="workers_receipt_file_name" invisible="1"/>
+                                        <field name="date_validity_workers_receipt"  attrs="{'required': [('workers_receipt', '!=', False)]}"/>
+                                    </group>
+                                </group>
+                                <group name = "6_company" attrs="{'invisible': [('category_id', 'not in', 6)]}"> 
+                                    <group name = "6_company_izquierda">
+                                        <field name="rlc" filename="rlc_file_name"/>
+                                        <field name="rlc_file_name" invisible="1"/>
+                                        <field name="rnt" filename="rnt_file_name"/>
+                                        <field name="rnt_file_name" invisible="1"/>
+                                        <field name="rlc_rnt_receipt" filename="rlc_rnt_receipt_file_name"/>
+                                        <field name="rlc_rnt_receipt_file_name" invisible="1"/>
+                                        <field name="date_validity_rlc_rnt"  attrs="{'required': [('rlc', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "6_company_derecha">
+                                    </group>
+                                </group>
+                                <group name = "6_freelance" attrs="{'invisible': [('category_id', 'not in', 8)]}">
+                                    <group name = "6_freelance_izquierda">
+                                        <field name="medical_examination" filename="medical_examination_file_name"/>
+                                        <field name="medical_examination_file_name" invisible="1"/>
+                                        <field name="date_expiration_medical_examination"  attrs="{'required': [('medical_examination', '!=', False)]}"/>
+                                    </group>
+                                    <group name = "6_freelance_derecha">
+                                        <field name="prl_formation"/>
+                                    </group>
+                                </group>
+                            </sheet>
+                        </form>
+                    </page>
+
+                    <page name="Workers" string="Workers" attrs="{'invisible': [('category_id', 'not in', 6)]}">
+                        <field name="workers_ids" 
+                                context="{
+                                            'tree_view_ref': 'work.view_outsource_workers_list',
+                                            'form_view_ref': 'work.view_outsource_workers_form',
+                                            'default_outsource_id': id
+                                        }"
+                        />
+                    </page>
+                </xpath>            
+            </field>
+        </record>  
+
+    </data>
+</odoo>

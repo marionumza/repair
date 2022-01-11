@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account_work_view_move_form" model="ir.ui.view">
+            <field name="name">account.work.move.view.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='company_id']" position="after">
+                    <field name="project_id"/>
+                    <field name="related_project_analytic" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='ref']" position="after">
+                    <field name="payable"
+                        invisible="context.get('default_type') not in ('in_invoice', 'in_refund')"/>
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                    <attribute name="context">
+                        {'default_type': context.get('default_type'), 
+                        'journal_id': journal_id, 
+                        'default_partner_id': commercial_partner_id, 
+                        'default_currency_id': currency_id != company_currency_id and currency_id or False,
+                        'default_related_project_id': related_project_analytic or False}
+                    </attribute>
+                </xpath>
+                <xpath expr="//field[@name='analytic_account_id'][1]" position="replace">
+                    <field name="related_project_id" invisible="1"/>
+                    <field name="analytic_account_id" 
+                        optional="show" 
+                        domain="[('id', '=', parent.related_project_analytic)]" 
+                        groups="analytic.group_analytic_accounting" 
+                        attrs="{'invisible': [('display_type', 'in', ('line_section', 'line_note'))]}"
+                    />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Sobreescritura de los botones y estados de validacion para que se vea en publicado -->
+        <record id="account_work_view_move_validation_form" model="ir.ui.view">
+            <field name="name">account.work.move.validation.view.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account_move_tier_validation.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='request_validation']" position="attributes">
+                    <attribute name="attrs">
+                        {'invisible': ['|',('need_validation', '!=', True),('rejected','=',True)]}
+                    </attribute>
+                </xpath>
+                <xpath expr="//button[@name='restart_validation']" position="attributes">
+                    <attribute name="attrs">
+                        {'invisible': [('review_ids', '=', [])]}
+                    </attribute>
+                </xpath>
+                <xpath expr="//div[hasclass('alert-warning')]" position="attributes">
+                    <attribute name="attrs">
+                        {
+                            'invisible': ['|', '|',
+                            ('validated', '=', True),
+                            ('rejected', '=', True), 
+                            ('review_ids', '=', [])]
+                        }
+                    </attribute>
+                </xpath>
+                <xpath expr="//div[hasclass('alert-success')]" position="attributes">
+                    <attribute name="attrs">
+                        {'invisible': ['|', ('validated', '!=', True), ('review_ids', '=', [])]}
+                    </attribute>
+                </xpath>
+                <xpath expr="//div[hasclass('alert-danger')]" position="attributes">
+                    <attribute name="attrs">
+                        {'invisible': ['|', ('rejected', '!=', True), ('review_ids', '=', [])]}
+                    </attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="account_work_view_move_tree" model="ir.ui.view">
+            <field name="name">account.work.move.view.tree</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="computed_validation_state" 
+                        optional="show" 
+                        invisible="context.get('default_type') not in ('in_invoice', 'in_refund')"/>
+                    <field name="payable"
+                        optional="show"
+                        invisible="context.get('default_type') not in ('in_invoice', 'in_refund')"/>
+                </xpath>
+            </field>
+        </record>    
+    </data>
+</odoo>
+    

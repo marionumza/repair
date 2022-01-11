@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_work_waste_list" model="ir.ui.view">
+            <field name="name">work_waste list</field>
+            <field name="model">work.waste</field>
+            <field name="arch" type="xml">
+                <tree string="Waste">
+                    <field name="code"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_work_waste_management_list" model="ir.ui.view">
+            <field name="name">work_waste_management list</field>
+            <field name="model">work.waste_management</field>
+            <field name="arch" type="xml">
+                <tree string="Waste Management">
+                    <field name="waste_id"/>
+                    <field name="date_waste"/>
+                    <field name="weight"/>
+                    <field name="attachment" filename="attachment_file_name" invisible="1"/>
+                    <field name="attachment_file_name"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_work_waste_management_form" model="ir.ui.view">
+            <field name="name">work_waste_management form</field>
+            <field name="model">work.waste_management</field>
+            <field name="arch" type="xml">
+                <form string="Waste Management">
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}" class="myStatusBar"/> 
+                    </header>    
+                    <sheet>
+                        <group name = "1">   
+                            <group name = "1_izquierda">
+                                <field name="waste_id"/>
+                            </group>
+                            <group name = "1_derecha">
+                                <field name="date_waste"/>
+                            </group>
+                        </group>
+                        <group>   
+                            <group name = "cabecera_izquierda">
+                                <field name="weight"/>
+                            </group>
+                            <group name = "cabecera_derecha">
+                                <field name="attachment" filename="attachment_file_name"/>
+                                <field name="attachment_file_name" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

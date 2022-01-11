@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_work_work_certification,work.work_certification,model_work_work_certification,base.group_user,1,1,1,1
+access_work_work_waste_management,work.waste_management,model_work_waste_management,base.group_user,1,1,1,1
+access_work_work_waste,work.waste,model_work_waste,base.group_user,1,1,1,1
+access_work_work_outsource,work.outsource,model_work_work_outsource,base.group_user,1,1,1,1
+access_work_work_outsource_workers,work.outsource_workers,model_work_work_outsource_workers,base.group_user,1,1,1,1
+access_work_work_material,work.material,model_work_work_material,base.group_user,1,1,1,1
+access_work_hist_rea,work.hist_rea,model_work_hist_rea,base.group_user,1,1,1,1
+access_work_hist_rc_insurance,work.hist_rc_insurance,model_work_hist_rc_insurance,base.group_user,1,1,1,1
+access_work_hist_accident_insurance,work.hist_accident_insurance,model_work_hist_accident_insurance,base.group_user,1,1,1,1
+access_work_hist_prevention_service,work.hist_prevention_service,model_work_hist_prevention_service,base.group_user,1,1,1,1
+access_work_hist_ss_certificate,work.hist_ss_certificate,model_work_hist_ss_certificate,base.group_user,1,1,1,1
+access_work_hist_tax_certificate,work.hist_tax_certificate,model_work_hist_tax_certificate,base.group_user,1,1,1,1
+access_work_hist_ita,work.hist_ita,model_work_hist_ita,base.group_user,1,1,1,1
+access_work_hist_workers_receipt,work.hist_workers_receipt,model_work_hist_workers_receipt,base.group_user,1,1,1,1
+access_work_hist_rlc_rnt,work.hist_rlc_rnt,model_work_hist_rlc_rnt,base.group_user,1,1,1,1
+access_work_hist_freelance_receipt,work.hist_freelance_receipt,model_work_hist_freelance_receipt,base.group_user,1,1,1,1

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <act_window id="open_certifications_list" 
+            name="Certifications" 
+            res_model="work.work_certification" 
+            view_mode="tree,form"
+        /> 
+
+        <menuitem id="submenu_projects" action="project.open_view_project_all" name="Projects" parent="project.menu_projects" sequence="1"/>
+        <menuitem id="submenu_certification" action="open_certifications_list" name="Certifications" parent="project.menu_projects" sequence="2"/>
+
+    </data>
+</odoo>
