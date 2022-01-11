@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <!--         explicit list view definition-->
+        <record model="ir.ui.view" id="factura_inherit_form">
+            <field name="name">factura.inherit.form</field>
+            <field name="inherit_id" ref="account.report_invoice_document"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="///div[@id='informations']" position="before">
+                    <div>
+                        Realiza la facturación:
+                        <span t-field="o.billing_employed"/>
+                    </div>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

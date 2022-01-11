@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_contact_and_project_contact_and_project,contact_and_project.contact_and_project,model_contact_and_project_contact_and_project,base.group_user,1,1,1,1

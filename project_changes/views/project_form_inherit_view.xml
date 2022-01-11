@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="project_changes_inherit_form">
+            <field name="name">project.changes.inherit.form</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="sale_timesheet.timesheet_plan"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//div[@class='o_timesheet_plan_stat_buttons oe_button_box']" position="inside">
+                    <span t-name="project_id"/>
+
+
+                </xpath>
+
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

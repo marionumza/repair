@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <!--         explicit list view definition-->
+        <record model="ir.ui.view" id="crm_changes_inherit_form">
+            <field name="name">crm.changes.inherit.form</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='team_id']" position="after">
+                    <field name="prescriber_farm_administrator"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

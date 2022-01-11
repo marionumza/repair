@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="contact_changes_inherit_form">
+            <field name="name">contact.changes.inherit.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                </xpath>
+                <xpath expr="//page[@name='internal_notes']" position="after">
+                    <page name="farm_administrator" string="Administrador de fincas" attrs="{'invisible': [('category_id','not in', 2)]}">
+                        <group>
+                            <group>
+                                <field name="contact_farm_administrator"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//page[@name='farm_administrator']" position="after">
+                    <page name="comunity" string="Comunidades" attrs="{'invisible': [('category_id','not in', 1)]}">
+                        <xpath expr="//group">
+                            <field name="contact_comunity" widget='many2many'/>
+                        </xpath>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

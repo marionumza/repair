@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="billing_changes.list">
+      <field name="name">billing_changes list</field>
+      <field name="model">billing_changes.billing_changes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="billing_changes.action_window">
+      <field name="name">billing_changes window</field>
+      <field name="res_model">billing_changes.billing_changes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="billing_changes.action_server">
+      <field name="name">billing_changes server</field>
+      <field name="model_id" ref="model_billing_changes_billing_changes"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="billing_changes" id="billing_changes.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="billing_changes.menu_1" parent="billing_changes.menu_root"/>
+    <menuitem name="Menu 2" id="billing_changes.menu_2" parent="billing_changes.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="billing_changes.menu_1_list" parent="billing_changes.menu_1"
+              action="billing_changes.action_window"/>
+    <menuitem name="Server to list" id="billing_changes" parent="billing_changes.menu_2"
+              action="billing_changes.action_server"/>
+-->
+  </data>
+</odoo>
